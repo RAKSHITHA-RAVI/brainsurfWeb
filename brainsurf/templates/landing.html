@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML with Bootstrap and Font Awesome</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    /* Your custom styles go here */
+  </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="/static/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            BRAIN SURF
+          </a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/ide">IDE DEMO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 sidebar">
+           
+            <input type="text" id="searchInput" class="form-control mb-3" placeholder="Search...">
+            <ul class="list-unstyled" id="sidebarList">
+              <li data-target="content1">Overview</li>
+              <li data-target="content2">Installation</li>
+              <li data-target="content3">Documentation</li>
+              <li data-target="content4">Version</li>
+              <li data-target="content5">Resources</li>
+              <li data-target="content6">Cite Us</li>
+            </ul>
+          </div>
+          <div class="col-8 content">
+            <div id="content1">
+                <h3>Overview</h3>
+                <p>Welcome to the EEG Meditation Analysis project, where we explore the fascinating connection between meditation and brainwave patterns. By analyzing EEG data collected during meditation sessions, we aim to uncover insights into the cognitive and emotional benefits of mindfulness practices.</p>   
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>
+                    <strong>EEG Data Collection:</strong> We utilize state-of-the-art EEG devices to capture and record brainwave activity during meditation sessions, ensuring accurate and reliable data acquisition.
+                  </li>
+                  <li>
+                    <strong>Data Analysis:</strong> Our advanced analysis techniques enable us to extract meaningful patterns and correlations from the collected EEG data, uncovering how meditation influences brain activity and cognitive states.
+                  </li>
+                  <li>
+                    <strong>Cognitive Assessment:</strong> Using machine learning algorithms, we assess cognitive abilities related to attention, relaxation, and emotional regulation, providing users with personalized feedback and insights into their meditation practice.
+                  </li>
+                  <li>
+                    <strong>Visualization Tools:</strong> Our interactive data visualization tools allow users to explore their brainwave patterns, track progress over time, and gain a deeper understanding of the effects of different meditation techniques on cognitive states.
+                  </li>
+                  <li>
+                    <strong>Community Engagement:</strong> We provide a platform for users to connect, share experiences, and support each other in their meditation journey through our vibrant community forum.
+                  </li>
+                </ul>
+                
+                <p>Join us in discovering the power of meditation and its impact on the mind. Explore the profound benefits of mindfulness and unlock a path to enhanced well-being and cognitive performance.</p>
+              </div>
+              
+        
+            <div id="content2">
+                <h3>Installation</h3>
+                <p>
+                  To install "brainsurf", you have two options:
+                  <br>
+                  <br>
+                  <strong>Option 1: Using pip</strong>
+                  <br>
+                  Run the following command in your terminal or command prompt:
+                  <br>
+                  <code>
+                    pip install brainsurf
+                  </code>
+                  <br>
+                  <br>
+                  <strong>Option 2: Cloning from GitHub</strong>
+                  <br>
+                  Clone the repository from GitHub by running the following command:
+                  <br>
+                  <code>
+                    git clone https://github.com/preethihiremath/brainsurf
+                  </code>
+                  <br>
+                  <br>
+                  Change to the cloned directory:
+                  <br>
+                  <code>
+                    cd brainsurf
+                  </code>
+                  <br>
+                  <br>
+                  Install the required dependencies using the following command:
+                  <br>
+                  <code>
+                    pip install -r requirements.txt
+                  </code>
+                  <br>
+                  <br>
+                  Finally, install "brainsurf" from source:
+                  <br>
+                  <code>
+                    python setup.py install
+                  </code>
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary" onclick="copyToClipboard()">
+                    <i class="fas fa-copy"></i> Copy Installation Instructions
+                  </a>
+                </p>
+              </div>
+           
+            
+            <div id="content3">
+              <h3>Documentation</h3>
+              <p>Content for Heading 3 goes here.</p>
+            </div>
+            <div id="content4">
+                <h3>Version</h3>
+                <div id="versionInfo">
+                    <h4>Version X.X.X</h4>
+                    <p>Release Date: [Date]</p>
+                  </div>
+                  
+                  <div id="changelog">
+                    <h4>Changelog:</h4>
+                    <ul>
+                      <li>
+                        <strong>New features and enhancements:</strong>
+                        <ul>
+                          <li>Implemented advanced EEG data preprocessing techniques for improved signal quality.</li>
+                          <li>Added real-time visualization of brainwave patterns during meditation sessions.</li>
+                          <li>Integrated machine learning algorithms to analyze EEG data and provide personalized meditation recommendations.</li>
+                          <li>Enhanced user interface for a more intuitive and seamless user experience.</li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong>Bug fixes and optimizations:</strong>
+                        <ul>
+                          <li>Resolved issue causing occasional data synchronization errors between EEG devices and the analysis platform.</li>
+                          <li>Optimized computational algorithms to improve processing speed and accuracy.</li>
+                          <li>Fixed UI glitches and improved overall website responsiveness.</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div id="knownIssues">
+                    <h4>Known Issues:</h4>
+                    <p>Some users may experience compatibility issues with certain EEG devices. We are actively working on expanding device compatibility and resolving any related issues.</p>
+                  </div>
+                  
+            </div>
+            <div id="content5">
+                <h3>Resources</h3>
+                <p>Here are some helpful resources related to the BrainSurf project:</p>
+                <ul>
+                  <li>
+                    <a href="https://github.com/preethihiremath/brainsurf" target="_blank">BrainSurf GitHub Repository</a>
+                  </li>
+                  <li>
+                    <a href="https://numpy.org/" target="_blank">NumPy Documentation</a>
+                  </li>
+                  <li>
+                   
+                    <a href=" https://pypi.org/project/brainsurf/" target="_blank">BrainSurf in Pypi </a>
+                  </li>
+                  <li>
+                    <a href="https://www.scipy.org/" target="_blank">SciPy Documentation</a>
+                  </li>
+                  <li>
+                    <a href="https://matplotlib.org/" target="_blank">Matplotlib Documentation</a>
+                  </li>
+                  <li>
+                    <a href="https://en.wikipedia.org/wiki/Electroencephalography" target="_blank">Electroencephalography (EEG) on Wikipedia</a>
+                  </li>
+                  <li>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fnins.2018.00243/full" target="_blank">Frontiers in Neuroscience - EEG Processing and Analysis</a>
+                  </li>
+                  <li>
+                    <a href="https://www.researchgate.net/publication/270999877_Cognitive_functions_and_electroencephalographic_oscillations" target="_blank">ResearchGate - Cognitive Functions and EEG Oscillations</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <div id="content6">
+                <h3>Cite Us</h3>
+                <p>If you find the EEG Meditation Analysis project helpful in your research or any other work, we kindly request that you cite us using the following format:</p>
+                
+                <pre>
+                  <code>
+                  [Insert Citation Format Here]
+                  </code>
+                </pre>
+                
+                <p>Thank you for acknowledging our efforts. Your citation will help us in spreading awareness and promoting further advancements in the field of meditation and EEG analysis.</p>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    
+      
+
+  <!-- Your HTML content goes here -->
+  <script>
+    // Get the sidebar list and content divs
+    const sidebarList = document.getElementById('sidebarList');
+    const contentDivs = document.querySelectorAll('.content > div');
+  
+    // Show the content for the default active item (content1)
+    document.getElementById('content1').style.display = 'block';
+  
+    // Add click event listener to sidebar list items
+    sidebarList.addEventListener('click', function(e) {
+      const target = e.target.getAttribute('data-target');
+  
+      // Hide all content divs
+      contentDivs.forEach(function(div) {
+        div.style.display = 'none';
+      });
+  
+      // Show the selected content div
+      document.getElementById(target).style.display = 'block';
+    });
+
+    function copyToClipboard() {
+    const instructions = `To install "brainsurf", you have two options:
+    
+Option 1: Using pip
+Run the following command in your terminal or command prompt:
+pip install brainsurf
+
+Option 2: Cloning from GitHub
+Clone the repository from GitHub by running the following command:
+git clone https://github.com/preethihiremath/brainsurf
+
+Change to the cloned directory:
+cd brainsurf
+
+Install the required dependencies using the following command:
+pip install -r requirements.txt
+
+Finally, install "brainsurf" from source:
+python setup.py install`;
+
+    navigator.clipboard.writeText(instructions)
+      .then(() => {
+        alert('Installation instructions copied to clipboard!');
+      })
+      .catch((error) => {
+        console.error('Failed to copy installation instructions:', error);
+      });
+  }
+  </script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
